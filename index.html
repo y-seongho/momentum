@@ -8,72 +8,40 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>나만의 동기부여 홈화면 만들기</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    <script src="index.js" defer></script>
 
-        * {
-            font-family: 'Poppins', sans-serif;
-        }        
-
-        body {
-            background-image: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.288…45S25Or4E13WSo9jYkAbuw&oe=6366C547&_nc_sid=30a2ef);
-            background-position: center;
-            color: white;
-        }
-
-        .time {
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .greeting {
-            font-size: 50px;
-        }
-
-        .todo {
-            font-size: 30px;
-        }
-
-        .author {
-            font-size: 25px;
-            font-style: italic;
-        }
-
-        .main {
-            width: 100vw;
-            height: 80vh;
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .quote {
-            width: 100vw;
-            height: 20vh;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-
-    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="main">
         <div id="time" class="time">10:53</div>
         <div class="greeting">Hello, Hazel♡</div>
-        <div class="todo">점심 잘 먹기!</div>
+        <div id="todolist">
+            <div class="main__title"></div>
+            <div class="input__section">
+                <form>
+                    <div>
+                        <input type = "text" class = "item" autofocus="true">
+                    </div>
+                    <div>
+                        <button type = "button" class="input__button"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="item__list"></div>
+        </div>
     </div>
+
     <div class="quote">
         <div id="author" class="author"></div>
         <div id="content" class="content"></div>
     </div>
+    
 </body>
 
 </html>
