@@ -9,8 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>나만의 동기부여 홈화면 만들기</title>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-      rel="stylesheet">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="index.js" defer></script>
@@ -19,7 +19,10 @@
 
 <body>
     <div class="main">
-        <div id="time" class="time">10:53</div>
+        <div style="text-align: center;">
+            <span id="clock" style="color:white; font-size: 100px;">clock</span>
+            <span id="apm" style="color:white; font-size: 50px;"  >ampm</span>
+        </div>
         <div class="greeting">Hello, Hazel♡</div>
         <div id="todolist">
             <div class="main__title"></div>
@@ -41,7 +44,7 @@
         <div id="author" class="author"></div>
         <div id="content" class="content"></div>
     </div>
-    
+
 </body>
 
 </html>

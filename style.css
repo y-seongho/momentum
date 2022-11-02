@@ -5,8 +5,9 @@
 }        
 
 body {
-    background-image: url(https://cdn.britannica.com/16/99616-050-72CD201A/Colosseum-Rome.jpg);
+    background-image: url(hoho.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     overflow: hidden;
 }
